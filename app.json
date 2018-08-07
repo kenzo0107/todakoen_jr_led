@@ -1,0 +1,8 @@
+{
+  "name": "Todakoen JR LED on Heroku: Node.js",
+  "description": "I love todakoen",
+  "repository": "https://github.com/kenzo0107/todakoen_jr_led",
+  "logo": "https://github.com/kenzo0107/todakoen_jr_led/blob/master/public/images/LineColor_Saikyo.svg",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}
