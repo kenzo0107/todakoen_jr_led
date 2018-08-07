@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN">
+<html>
+<head>
+	<% include ../partials/header.ejs %>
+</head>
+
+<body>
+	<div class="base test" id="test"></div>
+	<div class="base pout" id="pout"></div>
+
+	<div id="frame1" class="frame">
+		<span class="label1" style="left:  10px;  top: 0px;">１</span>
+		<span class="label2" style="left:  70px;  top: 5px;">&nbsp;埼京線</span>
+		<span class="label3" style="left:  170px; top: 8px;">池袋•新宿•大崎•りんかい線方面</span>
+		<span class="label4" style="left:  70px;  top: 30px;">Saikyō Line</span>
+		<span class="label5" style="left:  170px; top: 30px;">for Ikebukuro, Shinjuku, Ōsaki & Rinkai Line</span>
+	</div>
+
+	<div>
+		<ul class="rap">
+			<li class="btn">
+				<a href="#" onclick="sound('todakoen_train_melody_1st');" class="btn">
+					<span class="fa fa-volume-up"></span>  1 番線出発チャイム
+				</a>
+			</li>
+			<li class="btn">
+				<a href="#" onclick="sound('todakoen_start_notice_1st');" class="btn">
+					<span class="fa fa-volume-up"></span>  1 番線ドアが閉まります。
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<div id="frame2" class="frame">
+		<span class="label1" style="left:  10px;  top: 0px;">2</span>
+		<span class="label2" style="left:  70px;  top: 5px;">&nbsp;埼京線</span>
+		<span class="label3" style="left:  170px; top: 8px;">武蔵浦和•大宮•川越方面</span>
+		<span class="label4" style="left:  70px;  top: 30px;">Saikyō Line</span>
+		<span class="label5" style="left:  170px; top: 30px;">for Musashi-Urawa, Ōmiya & Kawagoe</span>
+		<span class="label3" style="left:  70px;  top: 207px;"></span>
+	</div>
+
+	<ul class="rap">
+		<li class="btn">
+			<a href="#" onclick="sound('todakoen_train_melody_2nd');" class="btn">
+				<span class="fa fa-volume-up"></span>  2 番線出発チャイム
+			</a>
+		</li>
+		<li class="btn">
+			<a href="#" onclick="sound('todakoen_start_notice_2nd');" class="btn">
+				<span class="fa fa-volume-up"></span>  2 番線ドアが閉まります。
+			</a>
+		</li>
+	</ul>
+
+	<audio id="todakoen_train_melody_1st" preload="auto">
+		<source src="/sounds/todakoen_train_melody_1st.mp3" type="audio/mp3"/>
+		<source src="/sounds/todakoen_train_melody_1st.ogg" type="audio/ogg"/>
+		<p>※お使いのブラウザは、対応しておりません。</p>
+	</audio>
+	<audio id="todakoen_start_notice_1st" preload="auto">
+		<source src="/sounds/todakoen_start_notice_1st.mp3" type="audio/mp3"/>
+		<source src="/sounds/todakoen_start_notice_1st.ogg" type="audio/ogg"/>
+		<p>※お使いのブラウザは、対応しておりません。</p>
+	</audio>
+	<audio id="todakoen_train_melody_2nd" preload="auto">
+		<source src="/sounds/todakoen_train_melody_2nd.mp3" type="audio/mp3"/>
+		<source src="/sounds/todakoen_train_melody_2nd.ogg" type="audio/ogg"/>
+		<p>※お使いのブラウザは、対応しておりません。</p>
+	</audio>
+	<audio id="todakoen_start_notice_2nd" preload="auto">
+		<source src="/sounds/todakoen_start_notice_2nd.mp3" type="audio/mp3">
+		<source src="/sounds/todakoen_start_notice_2nd.ogg" type="audio/ogg">
+		<p>※お使いのブラウザは、対応しておりません。</p>
+	</audio>
+
+	<script type="text/javascript">
+		_test = document.getElementById("test");
+		_pout = document.getElementById("pout");
+
+		<!-- #1 -->
+		makeDisp(0,  24,  65, CHAR_SIZE * 18);
+		makeDisp(1,  24,  95, CHAR_SIZE * 18);
+		makeDisp(2,  24, 125, CHAR_SIZE * 18);
+
+		makeDisp(3, 460,  65, CHAR_SIZE * 18);
+		makeDisp(4, 460,  95, CHAR_SIZE * 18);
+		makeDisp(5, 460, 125, CHAR_SIZE * 18);
+
+		<!-- #2 -->
+		makeDisp(6,  24, 390, CHAR_SIZE * 18);
+		makeDisp(7,  24, 420, CHAR_SIZE * 18);
+		makeDisp(8,  24, 450, CHAR_SIZE * 18);
+
+		makeDisp(9,  460, 390, CHAR_SIZE * 18);
+		makeDisp(10, 460, 420, CHAR_SIZE * 18);
+		makeDisp(11, 460, 450, CHAR_SIZE * 18);
+	</script>
+</body>
+</html>
