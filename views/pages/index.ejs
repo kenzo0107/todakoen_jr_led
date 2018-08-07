@@ -74,27 +74,11 @@
 		<p>※お使いのブラウザは、対応しておりません。</p>
 	</audio>
 
+	<script type="text/javascript" src="/javascripts/application.js"></script>
 	<script type="text/javascript">
-		_test = document.getElementById("test");
-		_pout = document.getElementById("pout");
-
-		<!-- #1 -->
-		makeDisp(0,  24,  65, CHAR_SIZE * 18);
-		makeDisp(1,  24,  95, CHAR_SIZE * 18);
-		makeDisp(2,  24, 125, CHAR_SIZE * 18);
-
-		makeDisp(3, 460,  65, CHAR_SIZE * 18);
-		makeDisp(4, 460,  95, CHAR_SIZE * 18);
-		makeDisp(5, 460, 125, CHAR_SIZE * 18);
-
-		<!-- #2 -->
-		makeDisp(6,  24, 390, CHAR_SIZE * 18);
-		makeDisp(7,  24, 420, CHAR_SIZE * 18);
-		makeDisp(8,  24, 450, CHAR_SIZE * 18);
-
-		makeDisp(9,  460, 390, CHAR_SIZE * 18);
-		makeDisp(10, 460, 420, CHAR_SIZE * 18);
-		makeDisp(11, 460, 450, CHAR_SIZE * 18);
+		function sound(id) {
+			document.getElementById(id).play()
+		}
 	</script>
 </body>
 </html>
