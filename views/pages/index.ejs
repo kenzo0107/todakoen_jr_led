@@ -16,20 +16,20 @@
 		<span class="label5" style="left:  170px; top: 30px;">for Ikebukuro, Shinjuku, Ōsaki & Rinkai Line</span>
 	</div>
 
-	<div>
-		<ul class="rap">
-			<li class="btn">
-				<a href="#" onclick="sound('todakoen_train_melody_1st');" class="btn">
-					<span class="fa fa-volume-up"></span>  1 番線出発チャイム
-				</a>
-			</li>
-			<li class="btn">
-				<a href="#" onclick="sound('todakoen_start_notice_1st');" class="btn">
-					<span class="fa fa-volume-up"></span>  1 番線ドアが閉まります。
-				</a>
-			</li>
-		</ul>
-	</div>
+	<ul class="rap">
+		<li class="btn">
+			<audio preload="auto" controls>
+				<source src="/sounds/todakoen_train_melody_1st.mp3" type="audio/mp3"/>
+				<source src="/sounds/todakoen_train_melody_1st.ogg" type="audio/ogg"/>
+			</audio>
+		</li>
+		<li class="btn">
+			<audio preload="auto" controls>
+				<source src="/sounds/todakoen_start_notice_1st.mp3" type="audio/mp3"/>
+				<source src="/sounds/todakoen_start_notice_1st.ogg" type="audio/ogg"/>
+			</audio>
+		</li>
+	</ul>
 
 	<div id="frame2" class="frame">
 		<span class="label1" style="left:  10px;  top: 0px;">2</span>
@@ -37,48 +37,23 @@
 		<span class="label3" style="left:  170px; top: 8px;">武蔵浦和•大宮•川越方面</span>
 		<span class="label4" style="left:  70px;  top: 30px;">Saikyō Line</span>
 		<span class="label5" style="left:  170px; top: 30px;">for Musashi-Urawa, Ōmiya & Kawagoe</span>
-		<span class="label3" style="left:  70px;  top: 207px;"></span>
 	</div>
 
 	<ul class="rap">
 		<li class="btn">
-			<a href="#" onclick="sound('todakoen_train_melody_2nd');" class="btn">
-				<span class="fa fa-volume-up"></span>  2 番線出発チャイム
-			</a>
+			<audio preload="auto" controls>
+				<source src="/sounds/todakoen_train_melody_2nd.mp3" type="audio/mp3"/>
+				<source src="/sounds/todakoen_train_melody_2nd.ogg" type="audio/ogg"/>
+			</audio>
 		</li>
 		<li class="btn">
-			<a href="#" onclick="sound('todakoen_start_notice_2nd');" class="btn">
-				<span class="fa fa-volume-up"></span>  2 番線ドアが閉まります。
-			</a>
+			<audio preload="auto" controls>
+				<source src="/sounds/todakoen_start_notice_2nd.mp3" type="audio/mp3"/>
+				<source src="/sounds/todakoen_start_notice_2nd.ogg" type="audio/ogg"/>
+			</audio>
 		</li>
 	</ul>
 
-	<audio id="todakoen_train_melody_1st" preload="auto">
-		<source src="/sounds/todakoen_train_melody_1st.mp3" type="audio/mp3"/>
-		<source src="/sounds/todakoen_train_melody_1st.ogg" type="audio/ogg"/>
-		<p>※お使いのブラウザは、対応しておりません。</p>
-	</audio>
-	<audio id="todakoen_start_notice_1st" preload="auto">
-		<source src="/sounds/todakoen_start_notice_1st.mp3" type="audio/mp3"/>
-		<source src="/sounds/todakoen_start_notice_1st.ogg" type="audio/ogg"/>
-		<p>※お使いのブラウザは、対応しておりません。</p>
-	</audio>
-	<audio id="todakoen_train_melody_2nd" preload="auto">
-		<source src="/sounds/todakoen_train_melody_2nd.mp3" type="audio/mp3"/>
-		<source src="/sounds/todakoen_train_melody_2nd.ogg" type="audio/ogg"/>
-		<p>※お使いのブラウザは、対応しておりません。</p>
-	</audio>
-	<audio id="todakoen_start_notice_2nd" preload="auto">
-		<source src="/sounds/todakoen_start_notice_2nd.mp3" type="audio/mp3">
-		<source src="/sounds/todakoen_start_notice_2nd.ogg" type="audio/ogg">
-		<p>※お使いのブラウザは、対応しておりません。</p>
-	</audio>
-
 	<script type="text/javascript" src="/javascripts/application.js"></script>
-	<script type="text/javascript">
-		function sound(id) {
-			document.getElementById(id).play()
-		}
-	</script>
 </body>
 </html>

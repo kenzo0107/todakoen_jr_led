@@ -185,26 +185,6 @@ span.rY {
 	color: #00e030;
 }
 
-a.btn{
-	float:left;
-	position: relative;
-	display: inline-block;
-	width: 50%;
-	padding: 2.0em;
-	text-align: center;
-	font-weight: bold;
-	text-decoration: none;
-	color: #FFF;
-	text-shadow: 0 0 5px rgba(255, 255, 255, 0.0);
-	background: #8cbf59;
-	transition: .4s;
-	border-radius: 4px;
-}
-a.btn:hover {
-	text-shadow: -6px 0px 15px rgba(255, 255, 240, 0.83), 6px 0px 15px rgba(255, 255, 240, 0.83);
-	transition: .4s;
-}
-
 ul.rap {
 		display: flex;
 		flex-wrap: wrap;
