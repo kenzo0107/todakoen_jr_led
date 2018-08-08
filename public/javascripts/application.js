@@ -1,4 +1,3 @@
-// degrade-factory
 var DISP_SIZE = 17, DEFAULT_TIME = 200, BLINK_START_TIME = 10, BLINK_RESET_TIME = 20
 var _ajax, _shot = '', _sclr = ''
 var _test = document.getElementById('test')
